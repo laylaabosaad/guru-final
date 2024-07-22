@@ -1,0 +1,51 @@
+@keyframes fall {
+    from {
+        top: -50px; 
+    }
+    to {
+        top: 400px;
+    }
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.game-area {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border: 5px solid #000;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.fruit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    cursor: pointer;
+    animation: fall linear infinite;
+}
+
+.apple {
+    background-image: url('images/fruit-apple.png');
+}
+
+.bomb {
+    background-image: url('images/bomb.png');
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
